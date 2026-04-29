@@ -144,7 +144,7 @@ tabla_ordenada = ordenar_tabla(tabla_posiciones)
 
 # Generamos el archivo resumen.txt.
 # Este archivo deja evidencia del análisis realizado y permite revisar los resultados sin tener que ejecutar nuevamente el programa.
-with open("resumen.txt", "w", encoding="utf-8") as resumen:
+with open("resultados/resumen.txt", "w", encoding="utf-8") as resumen:
     resumen.write("RESUMEN DEL ANÁLISIS DE RESULTADOS DEPORTIVOS\n")
     resumen.write("------------------------------------------------\n\n")
 
@@ -183,7 +183,7 @@ with open("resumen.txt", "w", encoding="utf-8") as resumen:
 
 # Generamos también la tabla de posiciones en CSV.
 # Esto permite abrirla en Excel o incluirla fácilmente en el informe final.
-with open("tabla_posiciones.csv", "w", encoding="utf-8", newline="") as archivo_csv:
+with open("resultados/tabla_posiciones.csv", "w", encoding="utf-8", newline="") as archivo_csv:
     escritor = csv.writer(archivo_csv)
 
     escritor.writerow(["Equipo", "PJ", "PG", "PE", "PP", "GF", "GC", "DG", "PTS"])
@@ -217,7 +217,7 @@ plt.xlabel("Equipo")
 plt.ylabel("Puntos")
 plt.xticks(rotation=45)
 plt.tight_layout()
-plt.savefig("grafico_rendimiento.png")
+plt.savefig("resultados/grafico_rendimiento.png")
 plt.close()
 
 
