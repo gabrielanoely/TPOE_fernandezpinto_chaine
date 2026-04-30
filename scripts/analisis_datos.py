@@ -210,7 +210,7 @@ top_tabla = tabla_ordenada[:10]
 equipos_rendimiento = [item[0] for item in top_tabla]
 puntos_rendimiento = [item[1]["PTS"] for item in top_tabla]
 
-plt.figure(figsize=(20, 12))
+plt.figure(figsize=(10, 6))
 plt.bar(equipos_rendimiento, puntos_rendimiento)
 plt.title("Rendimiento entre equipos")
 plt.xlabel("Equipo")
