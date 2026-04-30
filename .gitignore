@@ -1,0 +1,8 @@
+# Archivos temporales de Python
+__pycache__/
+
+# Checkpoints de cuadernos de Google Colab/Jupyter
+.ipynb_checkpoints/
+
+# Archivos de registro (logs)
+*.log
